@@ -1,8 +1,8 @@
 info_message:
-	.asciz	"Reading disk\r\n"
+	.asciz	"[ INFO ] Reading disk\r\n"
 
 succ_message:
-	.asciz	"Successfully read disk\r\n"
+	.asciz	"[ INFO ] Successfully read disk\r\n"
 
 err_message:
-	.asciz	"Failed to read disk\r\n"
+	.asciz	"[ ERR ] Failed to read disk\r\n"
