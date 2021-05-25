@@ -17,7 +17,7 @@
 #define BOOTDESC_START  struct boot_desc {
 #define BOOTDESC_END    } PACKED;
 
-#include "../boot/bootdesc.inc"
+#include "bootdesc.inc"
 
 #undef BOOTDESC_START
 #undef BOOTDESC_END

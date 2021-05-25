@@ -14,7 +14,7 @@
 #define BOOTDESC_MAGIC	0xDEADBEEF
 #define BOOTDESC_VIDEO_MODE	0x00
 
-#include "bootdesc.inc"
+#include <krnl/bootdesc.inc>
 
 #undef BOOTDESC_START
 #undef BOOTDESC_END
