@@ -2,6 +2,7 @@
 #include "attrs.h"
 #include "bootdesc.h"
 #include "dri/vga.h"
+#include "panic.h"
 
 void NORETURN
 main(struct boot_desc *bd)
