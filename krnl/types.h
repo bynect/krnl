@@ -16,4 +16,8 @@ typedef signed long si64;
 typedef float fl32;
 typedef double fl64;
 
+#define false   0
+#define true    1
+typedef _Bool bool;
+
 #endif
