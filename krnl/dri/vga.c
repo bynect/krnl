@@ -15,7 +15,6 @@ vga_init(void)
 {
     vga_mem = (void *)0xB8000;
     vga_port = 0x03D4;
-    vga_cur = 0;
     vga_move(0);
     vga_clear();
 }
@@ -61,11 +60,18 @@ vga_print(const ui8 *str, ui64 len)
         }
     }
 
-    vga_move(vga_cur);
+    vga_move_cur(vga_cur);
 }
 
 void
 vga_move(ui16 cur)
+{
+    vga_move_cur(cur);
+    vga_cur = cur;
+}
+
+void
+vga_move_cur(ui16 cur)
 {
     asm_outui8(vga_port, 0x0F);
     asm_outui8(vga_port + 1, (ui8)(cur & 0xff));

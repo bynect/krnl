@@ -12,4 +12,6 @@ void vga_print(const ui8 *str, ui64 len);
 
 void vga_move(ui16 cur);
 
+void vga_move_cur(ui16 cur);
+
 #endif
