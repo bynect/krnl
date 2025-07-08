@@ -1,0 +1,3 @@
+display_library: sdl2
+floppya: 1_44=out/nectix.bin, status=inserted
+boot: a
